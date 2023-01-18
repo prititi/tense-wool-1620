@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    font-family:Questrial; 
+   
+}
+.container{
+    display: flex;
+   justify-content: space-between;
+   padding: 10px;
+}
+.part25{
+    margin-top: 150px;
+    height: 550px;
+    width:350px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: #eee;
+    overflow: auto;
+    padding: 8px 0;
+    
+}
+
+
+
+.part75{
+   margin-left: 370px;
+    
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding:  0px 5px;
+    height: 450px;
+
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+img{
+     width: 100%;
+    height: 70%;
+    
+}
+#sorting{
+    display: block;
+    padding: 3px;
+    margin: 5px;
+    margin: 3px 85%;
+}
+.card:hover img{
+    height: 68%;
+    transition: 0.5s;
+}
+.undernav{
+    display: flex;
+    justify-content: space-between;
+}
+.addtocart{
+    display: block;
+    margin: auto;
+    padding: 5px;
+    border: none;
+    background-color: #FF80AB;
+}
+#cut{
+    color: grey;
+
+    
+}
+
+
+.pink{
+    color: #FF80AB;
+}
+.accordion {
+    background-color: #ffffff;
+    color: #050505;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-weight: bold;
+     font-size: 30px;
+     
+}
+.accordion:hover{
+   background-color: #EC407A;
+   transition: 1s;
+}
+.panel {
+    height: 25%;
+    padding: 10px 25px;
+    /* background-color:; */
+    display: none;
+    overflow: hidden;
+    font-size: large;
+}
+
+
+@media screen and (min-width : 300px) and (max-width : 700px) {
+    .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+   }
+   .part25{
+     width:250px;
+     position: fixed;
+    z-index: 1;
+     top: 20px;
+    left: 10px;
+    background: #eee;
+    overflow: auto;
+    padding: 8px 0;
+   }
+   .part75{
+   margin-left: 250px;
+    
+  }
+   
+   #sorting{
+    display: none;
+   }
+}
+@media screen and (max-width : 300px) {
+    .wrapper{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+   }
+   .part25{
+     width:100px;
+     position: fixed;
+    z-index: 1;
+     top: 20px;
+    left: 10px;
+    background: #eee;
+    overflow: auto;
+    padding: 8px 0;
+   }
+   .part75{
+   margin-left: 100px;
+    
+}
+   #sorting{
+    display: none;
+   }
+}
+.container2 button{
+    margin: 5px;
+    border: none;
+    margin-top: 20px;
+    padding: 5px;
+    color: black;
+    
+}
+.container button:hover{
+    color: black;
+    background-color: #EC407A;
+}
+label,input{
+    display: inline-block;
+}
+#minprice,#maxprice{
+    padding: 10px;
+    border-color: #EC407A;
+}
