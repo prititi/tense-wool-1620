@@ -21,8 +21,13 @@
     padding: 8px 0;
     
 }
-
-
+.adityabirla{
+    margin: auto;
+}
+.size32,.size34{
+    padding: 25px;
+    font-size: large;
+}
 
 .part75{
    margin-left: 370px;
@@ -44,11 +49,15 @@ img{
     height: 70%;
     
 }
+footer{
+    margin-left: 150px;
+}
 #sorting{
     display: block;
-    padding: 3px;
+    padding: 10px;
     margin: 5px;
     margin: 3px 85%;
+    font-size: 15px;
 }
 .card:hover img{
     height: 68%;
@@ -61,9 +70,11 @@ img{
 .addtocart{
     display: block;
     margin: auto;
-    padding: 5px;
+    padding: 10px;
     border: none;
-    background-color: #FF80AB;
+    border-radius: 15px;
+    color: #ffff;
+    background-color: black ;
 }
 #cut{
     color: grey;
@@ -84,7 +95,7 @@ img{
     text-align: left;
     border: none;
     font-weight: bold;
-     font-size: 30px;
+     font-size: 15px;
      
 }
 .accordion:hover{
@@ -98,6 +109,9 @@ img{
     display: none;
     overflow: hidden;
     font-size: large;
+}
+.adityabirla{
+    margin-left: 50px;
 }
 
 
