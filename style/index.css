@@ -64,7 +64,8 @@ img {
   align-items: center;
   padding: 10px;
   position: relative;
-  background-color:#B2EBF2;
+  /* background-color:#E1BEE7; */
+  background-color: #F3E5F5;
   /* position: fixed; */
 }
 .searchIcon {
@@ -73,7 +74,8 @@ img {
   
 }
 .searchInputContainer .searchIcon{
-  background-color:#B2EBF2 ;
+  /* background-color:#E1BEE7; */
+  background-color: #F3E5F5;
 }
 form{
     width: 100%;
@@ -83,7 +85,8 @@ form{
     border:none;
     outline: none;
     font-size: 16px;
-    background-color: #B2EBF2;
+    /* background-color: #E1BEE7; */
+    background-color: #F3E5F5;
     font-weight: 700;
 
     /* color: ; */
@@ -383,6 +386,13 @@ nav ul li:hover .subMenu{
     grid-template-rows: repeat(2,1fr);
     gap: 10px;
   }
+  .image:focus {
+    outline: none;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
   .men-women-tshirt{
     /* width: 100%; */
     display: flex;
@@ -413,6 +423,13 @@ nav ul li:hover .subMenu{
     gap: 52px;
     margin: 62px 67px 42px 225px;
   }
+  .right:focus {
+    outline: none;
+}
+
+.right:hover {
+    transform: scale(1.1);
+}
   .left #text{
    
     margin: 88px -119px 40px 43px;
@@ -433,7 +450,15 @@ nav ul li:hover .subMenu{
     margin-left: 55px;
     width: 100%;
     border-radius: 10px;
+    cursor: pointer;
   }
+  #btn:focus {
+    outline: none;
+}
+
+#btn:hover {
+    transform: scale(1.1);
+}
   .topbrand{
     margin:39px 0px 22px 73px;
     font-weight: 700;
@@ -446,6 +471,13 @@ nav ul li:hover .subMenu{
   .swiper {
     width: 90%;
     /* height: 100%; */
+}
+.swiper-slide img:focus {
+  outline: none;
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.1);
 }
 
 .swiper-slide img {
