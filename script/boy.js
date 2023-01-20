@@ -254,6 +254,7 @@ size34.addEventListener("click",()=>{
                     }
                     if(flag){
                         alert("Alerady in the Cart !")
+                        
                     }else{
                        alert("Added to the Cart !")
                        arr.push(element);
