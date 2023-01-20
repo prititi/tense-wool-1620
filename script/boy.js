@@ -253,9 +253,20 @@ size34.addEventListener("click",()=>{
                         }
                     }
                     if(flag){
-                        alert("Alerady in the Cart !")
+                        // alert("Alerady in the Cart !")
+                        Swal.fire(
+                            'Alerady in the Cart 🛒',
+                            'You clicked the button!',
+                            'success'
+                          )
+                        
                     }else{
-                       alert("Added to the Cart !")
+                    //    alert("Added to the Cart 🛒")
+                       Swal.fire(
+                        'Added to the Cart 🛒',
+                        'You clicked the button!',
+                        'success'
+                      )
                        arr.push(element);
                        localStorage.setItem("cartdata",JSON.stringify(arr))
                     }
