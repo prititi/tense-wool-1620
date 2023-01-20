@@ -72,9 +72,16 @@ footer{
     margin: auto;
     padding: 10px;
     border: none;
-    border-radius: 15px;
+    border-radius: 6px;
     color: #ffff;
     background-color: black ;
+}
+.addtocart:focus {
+    outline: none;
+}
+
+.addtocart:hover {
+    transform: scale(1.1);
 }
 #cut{
     color: grey;

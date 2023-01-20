@@ -1,4 +1,4 @@
-let walletBalance = 5000;
+let walletBalance = 100000;
 
 let payAmt = document.getElementById("pay-amt");
 let balanceAmt = document.getElementById("balance-amt");
@@ -20,18 +20,38 @@ function makePayment(payAmount) {
   return new Promise((resolve, reject) => {
     setTimeout(function () {
       if (payAmount <= walletBalance) {
-        resolve("Payment Successful🎉");
+       resolve("Payment Successful🤑");
+      //  window.location.replace("./index.html")
+
+      // whole screen alert
+      Swal.fire(
+        'Payment Successful🤑',
+        'You clicked the button!',
+        'success'
+      )
+       
       } else {
         reject("Payment Fail😥");
+        Swal.fire({
+          icon: 'error',
+          title: 'Payment Fail😥',
+          text: 'Something went wrong!',
+        })
       }
-    }, 2000);
+    }, 3000);
   });
 }
 
 payButton.addEventListener("click", function (e) {
-  feedbackText.innerText = "Loading";
+
+  feedbackText.innerText = "Loading..";
   if (payAmt.value === "") {
-    feedbackText.innerText = "write proper amount";
+    feedbackText.innerText = "write proper amount☝...";
+    Swal.fire(
+      'write proper amount☝...',
+      'You clicked the button!',
+      'error'
+    )
     return;
   }
 
@@ -41,6 +61,7 @@ payButton.addEventListener("click", function (e) {
       walletBalance = walletBalance - payAmt.value;
       balanceAmt.innerText = walletBalance; //ui
       payAmt.innerText = "";
+      
     })
     .catch((msg) => {
       feedbackText.innerText = msg;

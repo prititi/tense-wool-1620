@@ -11,33 +11,40 @@
       <div class="container">
         <div class="heading">
           <img
-            src="./img/phone-pe.png"
+            src="./images/phone pay.jpg"
             alt="phone-pe"
             id="phone-pe-logo"
             class="phone-pe-logo"
           />
         </div>
         <div class="main">
-          <div>
+          <div class="curr_bal">
             Current Balance:
             <strong id="balance-amt">0.00</strong>
           </div>
           
-          <label>
+          <label class="payment_amt">
             Payment Amount:
-            <input type="number" name="pay-amt" id="pay-amt" />
+            <input type="number" name="pay-amt" id="pay-amt" required />
           </label>
           <label>
-            <button class="pay-btn" id="pay-btn">Pay now!</button>
+            <button class="pay-btn" id="pay-btn">Pay now 👇!</button>
           </label>
 
           <div class="feedback-wrapper">
-            <strong id="feedback-text">Welcome...</strong>
+            <strong id="feedback-text">Welcome💥💥...</strong>
           </div>
         </div>
+        <div>
+         <a href="./index.html"> <button class="btn">Home</button></a>
+        </div>
+      </div>
+      <div class="india">
+        <img style="width: 209%;" id="ind_logo" src="./images/payment logo.jpg" alt="">
       </div>
     </div>
 
     <script src="./script/payment.js"></script>
   </body>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>
