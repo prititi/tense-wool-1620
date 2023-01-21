@@ -69,7 +69,7 @@
         <div class="profileAndCart">
           <div class="profileContainer">
             <div class="profileIcon">
-              <img src="./images/profile.png" />
+              <a href="./registration.html"> <img src="./images/profile.png" /></a>
             </div>
 
             <!-- Drop Down Sigin/SignUp -->
@@ -79,6 +79,9 @@
                 <!-- <hr> -->
               </div>
             </div>
+          </div>
+          <div>
+            <button id="logout">logout</button>
           </div>
 
           <div class="CartContainer">
@@ -608,3 +611,24 @@
 </html>
 <!-- its very mendetory to do that for drop down........................ -->
 <script src="./scripts/nav.js" type="module"></script>
+<script>
+  let profile=document.getElementById("icon-style");
+  let logout=document.getElementById("logout");
+  let auth=JSON.parse(localStorage.getItem("auth"));
+  let name=JSON.parse(localStorage.getItem("name"));
+  profile.style.fontSize="normal";
+  window.addEventListener("load",()=>{
+    if(auth==true){
+    profile.innerHTML=`<p>
+      Mr.${name}
+      </p>`;
+  }
+  // console.log(profile.innerText)
+  })
+  logout.addEventListener("click",()=>{
+    // auth=false;
+    alert("Logout successfully");
+    profile.innerText="profile";
+    logout.style.display="none";
+  })
+</script>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+  </head>
+  <link rel="stylesheet" href="./style/login.css" />
+  <body>
+    <div id="login">
+      <div id="box">
+        <div id="part1">
+          <a href="../index.html"> <img src="./images/logo.png" alt="" /></a>
+        </div>
+        <div id="error"></div>
+        <div id="part2">
+          <div id="p2">
+            <h4>Email</h4>
+            <input
+              type="email"
+              id="email"
+              placeholder=" Enter Email"
+            />
+            <h4>Password</h4>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder=" Enter password"
+            />
+            <button id="login-submit">Log In</button>
+          </div>
+        </div>
+        <br>
+        <div id="part3">
+          <div id="line">
+            <p>——————————</p>
+            <p class="or">or</p>
+            <p>——————————</p>
+          </div>
+        <br>
+          <div id="p3">
+            <div>
+              <img src="https://id.tmetric.com/images/google_logo.svg" alt="" />
+              <p>Log In with Google</p>
+            </div>
+            <div>
+              <img
+                src="https://id.tmetric.com/images/microsoft_logo.svg"
+                alt=""
+              />
+              <p>Log In with Microsoft</p>
+            </div>
+            <div>
+              <img src="https://id.tmetric.com/images/apple_logo.svg" alt="" />
+              <p>Log In with Apple</p>
+            </div>
+          </div>
+          <div id="line">
+            <p>———————————————————————</p>
+          </div>
+          <div id="last">
+            <p>Can't Log In?</p>
+            <a style="text-decoration: none;color:#3070f0 ;" href="./registration.html"> <p>Sign Up</p></a>
+          </div>
+        </div>
+      </div>
+      <p id="privacy">Privacy Policy</p>
+    </div>
+  </body>
+</html>
+
+
+<script src="./script/login.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
