@@ -8,8 +8,23 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Questrial" />
     <link rel="stylesheet" href="style/boy.css">
     <link rel="stylesheet" href="style/index.css">
-   
-</head>
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <style>
+      .badge:after{
+        content:attr(value);
+        font-weight: bold;
+        font-size:18px;
+        color: rgb(221, 15, 15);
+        background: rgb(255, 255, 255);
+        border-radius:50%;
+        padding: 0 5px;
+        position:relative;
+        left:-8px;
+        top:-10px;
+        opacity:0.9;
+    }
+    </style>
+  </head>
 <body>
      <!-- nav bar start -->
      <header>
@@ -78,7 +93,7 @@
   
             <div class="CartContainer">
               <div class="CartIcon">
-                <img src="./images/cart.png" />
+                <i id="cart" class="fa badge fa-lg">&#xf07a;</i>
               </div>
               <p id="icon-style"><a style="font-weight: bold;" href="cart2.html"> <b>Cart</b></a></p>
             </div>
@@ -123,7 +138,7 @@
      <!-- nav bar end  -->
      <div style="margin-top: 200px;" class="container">
         <div id="Demo1" class="part25">
-            <button class="accordion">FILTER BY DISCOUNT</button>
+            <button class="accordion"><div class="name">FILTER BY DISCOUNT</div><div class="arrow">&#x2304;</div></button>
             <div class="panel">
                  <input type="Checkbox" value="Discounted-items" id="discount"> 
                  <label for="Discount">Discount</label> <br>
@@ -131,7 +146,7 @@
                  <label for="Discount">Non - Discount</label>
             </div>
 
-            <button class="accordion">PRICE</button>
+            <button class="accordion"><div class="name">PRICE</div><div class="arrow">&#x2304;</div></button>
             <div class="panel">
                 <form action="" id="pricefilter">
                         <label for="discount">Min Price</label> <br>
@@ -141,29 +156,95 @@
                         <button style="padding:10px;" type="submit">GO</button>
                </form> 
             </div>
-            <button class="accordion">CATEGORIES</button>
+            <button class="accordion"><div class="name">CATEGORIES</div><div class="arrow">&#x2304;</div></button>
             <div class="panel">
                  <input type="Checkbox" value="T-Shirts" id="tshirt"> 
                  <label for="Discount">T - SHIRTS</label> <br>
                  <input type="checkbox" value="shorts" id="shorts">
                  <label for="Discount">SHORTS</label> <br>
                  <input type="checkbox" value="Track-Pants" id="trackpants">
-                 <label for="Discount">TRACK PANTS</label>
+                 <label for="Discount">JOGGERS</label><br>
+                 <input type="checkbox" value="Track-Pants" id="trackpants">
+                 <label for="Discount">SHOES</label><br>
+                 <input type="checkbox" value="Track-Pants" id="trackpants">
+                 <label for="Discount">SUITS</label>
             </div>
 
-            <button class="accordion">TYPE</button>
+            <button class="accordion"><div class="name">TYPES</div><div class="arrow">&#x2304;</div></button>
             <div class="panel">
                    <input type="checkbox" id="jeans" value="Jeans" >
-                    <label for="nondiscount">JEANS</label>
+                    <label for="nondiscount">JEANS</label><br>
+                    <input type="checkbox"  >
+                    <label for="nondiscount">TRACK SUITS</label><br>
+                    <input type="checkbox"  >
+                    <label for="nondiscount"> KIDS JEANS</label><br>
+                    <input type="checkbox"  >
+                    <label for="nondiscount"> GIRLS JEANS</label>
             </div>
-            <button class="accordion">COLOR</button>
+            <button class="accordion"><div class="name">COLOR</div><div class="arrow">&#x2304;</div></button>
             <div class="panel">
                 <input type="checkbox" id="black" value="black">
                 <label for="black">BLACK</label><br>
                 <input type="checkbox" id="red" value="red" >
                 <label for="red">RED</label> <br>
                 <input type="checkbox" id="yellow" value="yellow" >
-                <label for="yellow">YELLOW</label>
+                <label for="yellow">YELLOW</label><br>
+                <input type="checkbox" id="yellow" value="yellow" >
+                <label for="yellow">PINK</label><br>
+                <input type="checkbox" id="yellow" value="yellow" >
+                <label for="yellow">WHITE</label><br>
+            </div>
+            <button class="accordion"><div class="name">BY SIZE</div><div class="arrow">&#x2304;</div></button>
+            <div class="panel">
+                <input type="checkbox" id="black" value="black">
+                <label for="black">L</label><br>
+                <input type="checkbox" id="red" value="red" >
+                <label for="red">M</label> <br>
+                <input type="checkbox" id="yellow" value="yellow" >
+                <label for="yellow">XXL</label><br>
+                <input type="checkbox" id="yellow" value="yellow" >
+                <label for="yellow">XL</label><br>
+                <input type="checkbox" id="yellow" value="yellow" >
+                <label for="yellow">XXXL</label><br>
+            </div>
+            <button class="accordion"><div class="name">BRAND</div><div class="arrow">&#x2304;</div></button>
+            <div class="panel">
+                <input type="checkbox" id="black" value="black">
+                <label for="black">JACK&JONES</label><br>
+                <input type="checkbox" id="red" value="red" >
+                <label for="red">SPARKY</label> <br>
+                <input type="checkbox" id="yellow" value="yellow" >
+                <label for="yellow">WOODLAND</label><br>
+                <input type="checkbox" id="yellow" value="yellow" >
+                <label for="yellow">JORDAN</label><br>
+                <input type="checkbox" id="yellow" value="yellow" >
+                <label for="yellow">ASIAN</label><br>
+            </div>
+            <button class="accordion"><div class="name">RATING</div><div class="arrow">&#x2304;</div></button>
+            <div class="panel">
+                <input type="checkbox" id="black" value="black">
+                <label for="black">&#9733;</label><br>
+                <input type="checkbox" id="red" value="red" >
+                <label for="red">&#9733;&#9733;</label> <br>
+                <input type="checkbox" id="yellow" value="yellow" >
+                <label for="yellow">&#9733;&#9733;&#9733;</label><br>
+                <input type="checkbox" id="yellow" value="yellow" >
+                <label for="yellow">&#9733;&#9733;&#9733;&#9733;</label><br>
+                <input type="checkbox" id="yellow" value="yellow" >
+                <label for="yellow">&#9733;&#9733;&#9733;&#9733;&#9733;</label><br>
+            </div>
+            <button class="accordion"><div class="name">OPTIONS</div><div class="arrow">></div></button>
+            <div class="panel">
+                <input type="checkbox" id="black" value="black">
+                <label for="black">BLACK</label><br>
+                <input type="checkbox" id="red" value="red" >
+                <label for="red">RED</label> <br>
+                <input type="checkbox" id="yellow" value="yellow" >
+                <label for="yellow">YELLOW</label><br>
+                <input type="checkbox" id="yellow" value="yellow" >
+                <label for="yellow">PINK</label><br>
+                <input type="checkbox" id="yellow" value="yellow" >
+                <label for="yellow">WHITE</label><br>
             </div>
              
            
