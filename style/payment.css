@@ -44,9 +44,9 @@ body {
     
   }
   .curr_bal{
-    
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 25px;
     font-family: robote;
     font-weight: bold;
   }
@@ -54,33 +54,53 @@ body {
     /* border: 1px solid red; */
     font-family: robote;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
   }
   #pay-amt{
     border: 3px solid black;
     font-weight: bolder;
     border-radius: 6px;
+    cursor: pointer;
+    height: 30px;
+   
   }
   #pay-btn{
-    
+    width: 25%;
     border: 3px solid black;
     font-weight: 700;
-    border-radius: 6px;
+    border-radius: 8px;
     margin-left: 6px;
+    cursor: pointer;
+    margin: 31px -1px -79px 159px;
+    height: 40px;
+    font-size: 14px;
+    background:linear-gradient(to right,#81D4FA,#1565C0) ;
+    border: none;
+    
 
   }
-  
+   
+  #pay-btn:focus {
+    outline: none;
+}
+
+#pay-btn:hover {
+    transform: scale(1.1);
+    /* color: whitesmoke; */
+    background:linear-gradient(to right,#81D4FA,#1565C0) ;
+    border: none;
+}
   .phone-pe-logo {
     width: 100%;
     border-radius: 22px 22px 0px 0px;
   }
-  .phone-pe-logo:focus {
+  /* .phone-pe-logo:focus {
     outline: none;
 }
 
 .phone-pe-logo:hover {
     transform: scale(1.1);
-}
+} */
   
   .main {
     padding: 12px;

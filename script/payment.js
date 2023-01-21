@@ -29,7 +29,11 @@ function makePayment(payAmount) {
         'You clicked the button!',
         'success'
       )
-       
+        setTimeout(()=>{
+          window.location.href = "paymentPopUp.html"
+        },3000)
+
+
       } else {
         reject("Payment Fail😥");
         Swal.fire({

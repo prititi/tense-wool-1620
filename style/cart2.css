@@ -50,14 +50,22 @@ img{
 }
 .removebtn{
   border: none;
-  border-radius: 10px;
-  background-color: red;
+  /* border-radius: 10px; */
+  background-color: black;
+  color: whitesmoke;
   font-weight:bold;
   padding: 8px;
   margin-top: 60px;
-   margin-left: 120px; 
+
   
 }
+  .removebtn:focus {
+    outline: none;
+}
+
+.removebtn:hover {
+    transform: scale(1.1);
+} 
 #green,.green{
   color: green;
 }
@@ -72,14 +80,8 @@ img{
   margin: auto;
   width: 150px;
   border-radius: 15px;
-  color: black;
-  background-color: #F44336;
+  color: whitesmoke;
+  background-color: black;
   border: none;
   font-weight: bold;
-  margin-top: 20px;
-}
-.countbtn{
-  padding: 10px;
-  margin: 5px;
-  font-weight: bold;
-}
+
