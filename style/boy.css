@@ -105,7 +105,7 @@ footer{
     color: #FF80AB;
 }
 .accordion {
-    background-color: #ffffff;
+    background-color: #B2EBF2;
     color: #050505;
     cursor: pointer;
     padding: 18px;
@@ -113,12 +113,14 @@ footer{
     text-align: left;
     border: none;
     font-weight: bold;
-     font-size: 15px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
      
 }
 .accordion:hover{
-   background-color: #EC407A;
-   transition: 1s;
+   background-color: #E0F7FA;
+   transition: 2s;
 }
 .panel {
     height: 25%;

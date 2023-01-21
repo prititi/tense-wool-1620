@@ -10,9 +10,12 @@
   </title>
   <link rel="icon" href="./images/logo (2).png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-  
+  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="./style/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+   <style>
+    
+   </style>
 </head>
 
 <body>
@@ -69,7 +72,7 @@
         <div class="profileAndCart">
           <div class="profileContainer">
             <div class="profileIcon">
-              <img src="./images/profile.png" />
+              <a href="./registration.html"> <img src="./images/profile.png" /></a>
             </div>
 
             <!-- Drop Down Sigin/SignUp -->
@@ -80,10 +83,13 @@
               </div>
             </div>
           </div>
+          <div>
+            <button id="logout">logout</button>
+          </div>
 
           <div class="CartContainer">
             <div class="CartIcon">
-              <img src="./images/cart.png" />
+              <i class="fa badge fa-lg" value=0>&#xf07a;</i>
             </div>
             <p id="icon-style"><a style="font-weight: bold;" href="./cart.html">Cart</a></p>
           </div>
@@ -608,3 +614,24 @@
 </html>
 <!-- its very mendetory to do that for drop down........................ -->
 <script src="./scripts/nav.js" type="module"></script>
+<script>
+  let profile=document.getElementById("icon-style");
+  let logout=document.getElementById("logout");
+  let auth=JSON.parse(localStorage.getItem("auth"));
+  let name=JSON.parse(localStorage.getItem("name"));
+  profile.style.fontSize="normal";
+  window.addEventListener("load",()=>{
+    if(auth==true){
+    profile.innerHTML=`<p>
+      Mr.${name}
+      </p>`;
+  }
+  // console.log(profile.innerText)
+  })
+  logout.addEventListener("click",()=>{
+    // auth=false;
+    alert("Logout successfully");
+    profile.innerText="profile";
+    logout.style.display="none";
+  })
+</script>

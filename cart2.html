@@ -10,7 +10,22 @@
   <link rel="stylesheet" href="style/cart2.css">
   <link rel="stylesheet" href="./style/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">  
     <style>
+       .badge:after{
+        content:attr(value);
+        font-weight: bold;
+        font-size:18px;
+        color: rgb(221, 15, 15);
+        background: rgb(255, 255, 255);
+        border-radius:50%;
+        padding: 0 5px;
+        position:relative;
+        left:-8px;
+        top:-10px;
+        opacity:0.9;
+    }
+
         
     </style>
 </head>
@@ -81,7 +96,8 @@
     
               <div class="CartContainer">
                 <div class="CartIcon">
-                  <img src="./images/cart.png" />
+                  <!-- <img src="./images/cart.png" /> -->
+                  <i id="carticon" class="fa badge fa-lg">&#xf07a;</i>
                 </div>
                 <p id="icon-style"><a style="font-weight: bold;" href="./cart.html">Cart</a></p>
               </div>
@@ -130,7 +146,7 @@
             <div class="pricecontainer">
                <table>
                     <tbody id="tbody">
-                    <h3 ><b> Price Total</b></h3> 
+
                     <hr>
                     <div class="name">
                         <div id="priceitem" class="head"></div>
