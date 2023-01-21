@@ -1,5 +1,5 @@
 let maincontainer = document.querySelector(".wrapper")
-        let sortingdata = document.getElementById("sorting")
+let sortingdata = document.getElementById("sorting")
 
 // price filter *************************************************
         let form = document.getElementById("pricefilter")
@@ -227,7 +227,7 @@ size34.addEventListener("click",()=>{
           
           
 
-
+     let cart = document.getElementById("cart")
 
 
           function appendingdata(data){
@@ -246,6 +246,7 @@ size34.addEventListener("click",()=>{
                 button.innerText = "Add to Cart"
                 button.addEventListener("click",()=>{
                     let arr = JSON.parse(localStorage.getItem("cartdata"))||[];
+                    console.log(arr)
                     let flag = false;
                     for(let x=0; x<arr.length; x++){
                         if(arr[x].id == element.id){
@@ -268,9 +269,10 @@ size34.addEventListener("click",()=>{
                         'success'
                       )
                        arr.push(element);
+                       
                        localStorage.setItem("cartdata",JSON.stringify(arr))
                     }
-                    
+                    cart.innerHTML = `<i class="fa badge fa-lg" value=${arr.length}>&#xf07a;</i>`
                    
                 })
                 division.append(image,para,price,button)
