@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     width: 80%;
+    margin-left: 288px;
 }
 
 #fetch-data-button {
@@ -12,10 +13,11 @@
 #add-data-button{
     width: 45%;
     position: relative;
+   
 }
 .btn{
     height: 40px;
-    margin-left: 20px;
+    margin-left: 300px;
     display: flex;
     padding: 20px;
 }
@@ -34,11 +36,14 @@
     background-color: rgb(161, 91, 91);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 2rem;
-}
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    }
 
 #data-table {
     width: 100%;
-    float:right;
+    /* float:right; */
     margin-left:20px;
 }
 
