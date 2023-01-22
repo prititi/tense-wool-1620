@@ -13,6 +13,7 @@
   <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="./style/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
    <style>
     
    </style>
@@ -30,7 +31,7 @@
         <!--Search Box-->
         <div class="searchInputContainer">
           <div class="searchIcon">
-            <img src="./images/search.png" />
+            <a href="./boy.html"><img src="./images/search.png" /></a>
           </div>
           <form action="" id="inputForm">
             <input type="text" placeholder="Try Saree, Kurti or Search by Product Code" class="inputSearch" />
@@ -474,6 +475,7 @@
   <!-- footer............................... -->
   <footer>
     <div class="footer">
+      <div id="footerbox" style="border: 1px solid blue; display: flex;width:100%;">
       <div class="headings">
         <h2 class="heading2">MY ACCOUNT</h2>
         <div class="heading3"></div>
@@ -558,6 +560,7 @@
         </div>
       </div>
     </div>
+  </div>
   </footer>
   
   <div class="adityabirla">
@@ -628,7 +631,7 @@
   window.addEventListener("load",()=>{
     if(auth==true){
     profile.innerHTML=`<p>
-      Mr.${name}
+       ${name}
       </p>`;
   }
   // console.log(profile.innerText)
@@ -643,5 +646,51 @@
     )
     profile.innerText="profile";
     logout.style.display="none";
+  })
+</script>
+
+<!-- searching functionality............ -->
+<script>
+  let searchBar = document.getElementsByClassName("inputSearch");
+  let searchBtn = document.getElementsByClassName("searchIcon");
+  // inputSearch
+
+  searchBtn.addEventListener("click", () => {
+    if (searchBar.value == "mobile") {
+      window.location.href = "boy.html";
+    }
+    else if (searchBar.value == "furniture") {
+      window.location.href = "furniture.html";
+    }
+    else if (searchBar.value == "Furniture") {
+      window.location.href = "furniture.html";
+    }
+    else if (searchBar.value == "Furnitures") {
+      window.location.href = "furniture.html";
+    }
+    else if (searchBar.value == "furnitures") {
+      window.location.href = "furniture.html";
+    }
+    else if (searchBar.value == "sofa set") {
+      window.location.href = "furniture.html";
+    }
+    else if (searchBar.value == "Sofa set") {
+      window.location.href = "furniture.html";
+    }
+    else if (searchBar.value == "sofa sets") {
+      window.location.href = "furniture.html";
+    }
+    else if (searchBar.value == "Sofa sets") {
+      window.location.href = "furniture.html";
+    }
+    else if (searchBar.value == "Mobiles") {
+      window.location.href = "mobile.html";
+    }
+    else if (searchBar.value == "mobiles") {
+      window.location.href = "mobile.html";
+    }
+    else {
+      window.location.href = "none.html";
+    }
   })
 </script>
