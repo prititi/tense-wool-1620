@@ -1,3 +1,5 @@
+
+
 * {
   box-sizing: border-box;
 }
@@ -6,6 +8,7 @@
   --textColor: rgb(87, 85, 85);
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:wght@600&family=Poppins&family=Quicksand&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -358,12 +361,13 @@ nav ul li:hover .subMenu{
     margin-top: 6px;
   }
   #logout{
-    border: 1px solid red;
-    background-color: red;
-    color: whitesmoke;
+    border: 1px solid white;
+    background-color: #D32F2F;
+    color: #fff;
     height: 32px;
     border-radius: 4px;
     width: 117%;
+    font-family: montserrat;
 
   } 
   #logout:focus {
