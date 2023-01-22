@@ -3,10 +3,9 @@
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    margin-top: 230px;
+    margin-top:230px;
     position: relative;
-    
-    
+
 }
 
 #fetch-data-button {
@@ -28,8 +27,7 @@
 #add-data-button{
     width: 40%;
     position: relative;
-    font-size: 18px;
-    font-weight: 600;
+
 }
 #add-data-button:focus {
     outline: none;
@@ -41,7 +39,7 @@
 
 .btn{
     height: 40px;
-    margin-left: 20px;
+    margin-left: 300px;
     display: flex;
     padding: 20px;
 }
@@ -57,18 +55,19 @@
 
 }
 #add-modal {
-    width: 15%;
+    width: 18%;
     float:left;
     /* background: linear-gradient(to right,#81D4FA,#1565C0); */
     background: linear-gradient(to right,#eecda3,#ef629f);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 2rem;
     margin-top: 141px;
+    /* position: fixed; */
 }
 
 #data-table {
     width: 100%;
-    float:right;
+    /* float:right; */
     margin-left:20px;
 }
 
@@ -76,6 +75,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    height: auto;
 }
 
 #add-form label {
