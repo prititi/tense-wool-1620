@@ -88,3 +88,4 @@ let men_card10=document.getElementById("btn-10");
     function btnhide10(){
         men_card10.style.display="none";
     }      
+   

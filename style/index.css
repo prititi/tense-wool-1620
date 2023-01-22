@@ -511,7 +511,7 @@ nav ul li:hover .subMenu{
 
 /* footer................. */
 .footer{
-  margin-top: 50px;
+  /* margin-top: 80px; */
   padding-top: 50px;
   /* width: 100%; */
   background-color: #eef6f9;
@@ -519,19 +519,20 @@ nav ul li:hover .subMenu{
   font-size: 15px;
   min-height: 250px;
   padding: 10px 0px 25px 0px;
-  width: 80%;
+  width: 94%;
   height: 322px;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 52px;
-  margin: 95px -62px 84px 219px;
+  margin: 80px -62px 84px 20px;
+  /* margin: auto; */
   
 }
 a{
 text-decoration: none;
 }
 .heading3{
-/* border: 1px solid blue; */
+border: 1px solid blue;
 color: #2b2b2b;
 font-size: 20px;
 }
@@ -556,7 +557,7 @@ width: 15%;
 /* border: 1px solid blue; */
 display: block;
 text-align: center;
-margin: -63px 0px 100px 671px;
+margin: -63px 0px 100px 45%;
 
 }
 .p{
@@ -566,6 +567,68 @@ text-align: center;
 font-size: 12px;
 margin: 0px 0px 0px -177px;
 width: 249%;
+}
+
+/* top to bottom */
+element.style {
+display: inline;
+}
+.btn:not(:disabled):not(.disabled) {
+cursor: pointer;
+}
+.back-to-top {
+position: fixed;
+display: none;
+right: 30px;
+bottom: 30px;
+z-index: 11;
+animation: action 1s infinite alternate;
+}
+.btn-primary {
+color: #212529;
+background-color: #D19C97;
+border-color: #D19C97;
+}
+
+/* media query.................... */
+@media screen and (min-width : 0px) and (max-width : 400px) {
+ #slideshowone,.footer,.heading,#slideshow{
+  display: block;
+  display: strech;
+ }
+ .carticon2{
+  display: grid;
+  margin: auto;
+  justify-content: space-evenly;
+}
+#datas{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  margin-left: 30%;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+}
+@media screen and (min-width : 401px) and (max-width : 800px) {
+#slideshowone,.footer,.heading,#slideshow{
+ display:grid;
+ display: strech;
+ margin-left: 40%;
+ grid-template-columns: repeat(2,1fr);
+ width: 100%;
+}
+.carticon2{
+  display: grid;
+  margin: auto;
+  justify-content: space-evenly;
+}
+#datas{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-left: 30%;
+  gap: 20px;
+  margin-bottom: 50px;
+}
 }
 
 /* top to bottom */
