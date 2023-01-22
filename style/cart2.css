@@ -46,18 +46,30 @@ img{
   color: grey;
 }
 .pink{
-  color: palevioletred;
+  color: rgb(179, 126, 144);
 }
 .removebtn{
   border: none;
-  border-radius: 10px;
-  background-color: red;
+  /* border-radius: 10px; */
+  background-color: black;
+  color: whitesmoke;
   font-weight:bold;
   padding: 8px;
   margin-top: 60px;
-   margin-left: 120px; 
+  margin-left: 20px;
+  width: 33%;
+  height: 41px;
+  border-radius: 4px;
+
   
 }
+  .removebtn:focus {
+    outline: none;
+}
+
+.removebtn:hover {
+    transform: scale(1.1);
+} 
 #green,.green{
   color: green;
 }
@@ -71,15 +83,24 @@ img{
   display: block;
   margin: auto;
   width: 150px;
-  border-radius: 15px;
-  color: black;
-  background-color: #F44336;
+  border-radius: 6px;
+  color: whitesmoke;
+  background-color: black;
   border: none;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 83px;
+  cursor: pointer;
+
+}
+#placeorder:focus{
+  outline: none;
+}
+#placeorder:hover{
+  transform: scale(1.1);
 }
 .countbtn{
-  padding: 10px;
-  margin: 5px;
+  padding: 6px;
+  margin: 3px;
   font-weight: bold;
+  border: 3px solid black;
 }

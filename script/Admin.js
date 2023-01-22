@@ -161,7 +161,7 @@ function renderDataTable(data) {
             <td>${item.categories}</td>
             <td>${item.discount}</td>
             <td>
-                <button onclick="deleteData(${item.id})">Delete</button>
+                <button id="delete" onclick="deleteData(${item.id})">Delete</button>
             </td>
         `;
         return row;

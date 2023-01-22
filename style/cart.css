@@ -108,6 +108,7 @@ font-family: robote;
         background-color: rgb(235, 47, 14);
         /* font-size: xx-large; */
         border: none;
+        cursor: pointer;
        }
        #slidebtn button:active{
         font-size:medium;
@@ -131,6 +132,7 @@ font-family: robote;
   
       #slideshowone img {
     height: 300px;
+    margin-bottom: 30px;
     /* /* margin-right: 20px; */
   }
   
@@ -153,16 +155,16 @@ font-family: robote;
           text-align: center;
           color: #3E3E3E;
       }
-
+/* 
       #slideshowone>div:hover{
         box-shadow: rgba(160, 75, 75, 0.35) 0px 5px 15px;
-        /* background-color: #D19C97; */
+       
         background: linear-gradient(to right,#eecda3,#ef629f);
         border-radius: 10px;
         padding: 10px;
         font-weight: bold;
-        /* border: 2px solid yellowgreen; */
-      }
+        
+      } */
       #slideshowone{
         margin: 20px;
       }
@@ -194,6 +196,14 @@ font-family: robote;
       text-align: center;
       color: #3E3E3E;
     }
+    .slideshowone:focus {
+      outline: none;
+  }
+  
+  .slideshowone:hover {
+      transform: scale(1.1);
+      margin-bottom: 20px;
+  }
 
 
 

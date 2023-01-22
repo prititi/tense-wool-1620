@@ -3,18 +3,38 @@
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    margin-left: 288px;
+
 }
 
 #fetch-data-button {
-    width: 45%;
+    width: 40%;
     position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    
 }
+/* for zoom in ...........*/
+#fetch-data-button:focus {
+    outline: none;
+}
+
+#fetch-data-button:hover {
+    transform: scale(1.1);
+} 
+/* end here........... */
 #add-data-button{
-    width: 45%;
+    width: 40%;
     position: relative;
-   
+
 }
+#add-data-button:focus {
+    outline: none;
+}
+
+#add-data-button:hover {
+    transform: scale(1.1);
+} 
+
 .btn{
     height: 40px;
     margin-left: 300px;
@@ -24,22 +44,22 @@
 #fetch-data-button,#add-data-button{
     cursor: pointer;
    margin-left: 40px;
-   height: 30px;
-   background-color: rgb(255, 153, 0);
+   height: 40px;
+   /* background: linear-gradient(to right,#81D4FA,#1565C0); */
+   background: linear-gradient(to right,#eecda3,#ef629f);
    border: none;
-   border-radius: 12px;
+   border-radius: 9px;
+   margin-top: 161px;
 
 }
 #add-modal {
     width: 15%;
     float:left;
-    background-color: rgb(161, 91, 91);
+    /* background: linear-gradient(to right,#81D4FA,#1565C0); */
+    background: linear-gradient(to right,#eecda3,#ef629f);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 2rem;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    }
+
 
 #data-table {
     width: 100%;
@@ -69,7 +89,7 @@
 }
 
 #data-table th, #data-table td {
-    border: 1px solid rgb(0, 0, 35);
+    border: 2px solid rgb(0, 0, 35);
     padding: 8px;
 }
 
@@ -91,4 +111,22 @@
 
 .close{
     cursor: pointer;
+}
+#delete{
+    border: 1px solid red;
+    width: 107%;
+    height: 34px;
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    color: whitesmoke;
+    border-radius: 4px;
+}
+ #delete:focus {
+    outline: none;
+}
+
+#delete:hover {
+    transform: scale(1.1);
+    background-color: #D50000;
 }

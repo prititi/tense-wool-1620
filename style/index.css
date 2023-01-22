@@ -19,7 +19,7 @@ img {
 .header {
   height: 95px;
   outline: 1px solid #ccc;
-  padding: 0px 10px;
+  padding: 0px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -357,6 +357,22 @@ nav ul li:hover .subMenu{
     margin-left: 20px;
     margin-top: 6px;
   }
+  #logout{
+    border: 1px solid red;
+    background-color: red;
+    color: whitesmoke;
+    height: 32px;
+    border-radius: 4px;
+    width: 117%;
+
+  } 
+  #logout:focus {
+    outline: none;
+}
+
+#logout:hover {
+    transform: scale(1.1);
+} 
  
 
   /* mid part */
@@ -499,7 +515,7 @@ nav ul li:hover .subMenu{
   font-size: 15px;
   min-height: 250px;
   padding: 10px 0px 25px 0px;
-  width: 72%;
+  width: 80%;
   height: 322px;
   display: grid;
   grid-template-columns: repeat(4,1fr);
