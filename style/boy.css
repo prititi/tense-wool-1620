@@ -102,10 +102,10 @@ footer{
 
 
 .pink{
-    color: #FF80AB;
+    color: #ef629f;
 }
 .accordion {
-    background-color: #B2EBF2;
+    background: linear-gradient(to right,#eecda3,#ef629f);
     color: #050505;
     cursor: pointer;
     padding: 18px;

@@ -25,9 +25,9 @@ function LoginData(){
         }
         if(istrue==true){
             Swal.fire(
-                'Good job!',
-                'Login Successful!',
-                'success'
+                'Login successfully🎉..',
+                'You clicked the button!',
+                // 'success'
               )
             localStorage.setItem("auth",true);
             localStorage.setItem("name",JSON.stringify(name));

@@ -276,9 +276,10 @@ size34.addEventListener("click",()=>{
                    
                 })
                 division.append(image,para,price,button)
-                if(element.type == "Boykid"){
+                // if(element.type == "Boykid"){
+               
+                // }
                 maincontainer.append(division)
-                }
                
             });
           }
