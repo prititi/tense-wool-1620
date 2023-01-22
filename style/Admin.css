@@ -2,9 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
-    margin-top:220px;
+    width: 80%;
+    margin-top:230px;
     position: relative;
+    margin-left: 233px;
 
 }
 
@@ -27,6 +28,8 @@
 #add-data-button{
     width: 40%;
     position: relative;
+    font-size: 18px;
+    font-weight: 600;
 
 }
 #add-data-button:focus {
