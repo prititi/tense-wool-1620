@@ -3,7 +3,9 @@
     justify-content: space-between;
     align-items: center;
     width: 80%;
-
+    margin-top:230px;
+    position: relative;
+    margin-left: 230px;
 }
 
 #fetch-data-button {
@@ -53,13 +55,15 @@
 
 }
 #add-modal {
-    width: 15%;
+    width: 18%;
     float:left;
     /* background: linear-gradient(to right,#81D4FA,#1565C0); */
     background: linear-gradient(to right,#eecda3,#ef629f);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 2rem;
-
+    margin-top: 141px;
+    /* position: fixed; */
+}
 
 #data-table {
     width: 100%;
@@ -71,6 +75,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    height: auto;
 }
 
 #add-form label {
