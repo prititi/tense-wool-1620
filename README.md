@@ -1,6 +1,6 @@
 <h1 align="center">Clone of abof e-commerce website</h1>
 <img src="https://user-images.githubusercontent.com/115465871/213980137-578b8b38-f647-4c02-886f-133bbbcbea4e.jpeg" width="100%" ><br>
-<h1 align="center">Fashion Fusion</h1>
+<h1 align="center" style="margin-top="10px">Fashion Fusion</h1>
 
 
 <img align="right" alt="coding" width="400" src="https://thumbs.gfycat.com/ContentHeftyGuillemot-size_restricted.gif">
