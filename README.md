@@ -3,7 +3,7 @@
 <h1 align="center" >Fashion Fusion</h1>
 
 
-<img align="right" alt="coding" width="400" src="https://thumbs.gfycat.com/ContentHeftyGuillemot-size_restricted.gif">
+<img align="right" alt="coding" width="400" src="https://thumbs.gfycat.com/ContentHeftyGuillemot-size_restricted.gif"> <br>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=prititi&label=Profile%20views&color=0e75b6&style=flat" alt="prititi" /> </p>
 
