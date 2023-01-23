@@ -13,7 +13,7 @@
     <li> <h4 >Dhanush - [ login/man/women page ]</h4></li>
     <li> <h4 >Deepak - [cart page]</h4></li>
      <li> <h4 >Shivbhushan - [ payment page]</h4></li>
-      <li> <h4 >Asheesh - [ Admin page ]</h4></li>
+      <li> <h4 >Ashish - [ Admin page ]</h4></li>
 </ul>
 <h1 align="center" > CART PAGE </h1>
 
