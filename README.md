@@ -14,6 +14,8 @@
     <li> <h4 >Deepak - [cart page]</h4></li>
      <li> <h4 >Shivbhushan - [ payment page]</h4></li>
       <li> <h4 >Ashish - [ Admin page ]</h4></li>
+      <li><h4 align="left" > Netlify-link-  https://admirable-pavlova-852094.netlify.app/ </h4></li>
+     
 </ul>
 <h1 align="center" > CART PAGE </h1>
 
